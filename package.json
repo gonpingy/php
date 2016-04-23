@@ -1,0 +1,26 @@
+{
+  "name": "php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonpingy/php.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonpingy/php/issues"
+  },
+  "homepage": "https://github.com/gonpingy/php#readme",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-exec": "^2.1.2",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0"
+  }
+}
