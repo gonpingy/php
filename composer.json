@@ -3,7 +3,9 @@
     "require-dev": {
         "fabpot/php-cs-fixer": "^1.11",
         "phpunit/phpunit": "^5.3",
-        "jonnyw/php-phantomjs": "4.*"
+        "jonnyw/php-phantomjs": "4.*",
+        "behat/behat": "^3.1",
+        "sebastian/phpcpd": "*"
     },
     "authors": [
         {
@@ -12,9 +14,10 @@
         }
     ],
     "scripts": {
-      "style-check": "./vendor/bin/php-cs-fixer fix . --level=psr2",
-      "style-check-dryrun": "./vendor/bin/php-cs-fixer fix . --level=psr2 --dry-run",
+      "lint": "./vendor/bin/php-cs-fixer fix . --level=psr2",
+      "lint-dryrun": "./vendor/bin/php-cs-fixer fix . --level=psr2 --dry-run",
       "unit-test": "./vendor/bin/phpunit",
+      "check-copy": "phpcpd --min-tokens 10 --verbose ./app",
       "post-install-cmd": [
             "PhantomInstaller\\Installer::installPhantomJS"
       ],
