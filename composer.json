@@ -6,7 +6,8 @@
         "jonnyw/php-phantomjs": "4.*",
         "behat/behat": "^3.1",
         "sebastian/phpcpd": "*",
-        "sebastian/phpdcd": "*"
+        "sebastian/phpdcd": "*",
+        "phploc/phploc": "*"
     },
     "authors": [
         {
